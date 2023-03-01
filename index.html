@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://Chat-Server.simbarashemapip.repl.co/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <title>TMC CHAT</title>
+</head>
+
+<body>
+    <!--   BUTTON TO OPEN THE CHAT WINDOW   -->
+    <button class="open-btn" onclick="openChatWindow()">Chat With Us<i class='bx bx-message-rounded-dots'></i></button>
+    <!-- CHAT POP UP	 -->
+    <div class="chat-popup" id="chat-form-container">
+        <form action="https://chat-server.simbarashemapip.repl.co" class="form-container" id="msgForm" method="POST">
+            <!-- 		CHAT HEAD	 -->
+            <div class="one b">
+                <h4 class="chat-title"><i class='bx bx-message-rounded-dots'></i><span>Chat Window</span></h4>
+                <span class="b center close" onclick="closeChatWindow()"><i class='bx bx-x close-icon'></i></span>
+            </div>
+            <!-- 		MESSAGES	 -->
+            <div class="two b">
+                <div id="scroll-to-bottom">
+                    <div class="msg-container" id="messages">
+                        <!-- MESSAGES GOES HERE  -->
+                    </div>
+                </div>
+            </div>
+            <!-- 		SEND CONTAINER	 -->
+            <div class="three b">
+                <input type="text" name="message" class="input" placeholder="Type here ..." />
+                <button type="submit" class="btn"><i class='bx bx-send icon'></i></button>
+            </div>
+        </form>
+    </div>
+    <!-- END OF CHAT	 -->
+</body>
+
+</html>

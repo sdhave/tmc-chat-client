@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--col-b: #00387c;
+	--col-g: #ccbb83;
+    --col-gl: #F9F2DA;
+	--col-w: #fffffa;
+}
+
+.b {
+	border: 2px solid var(--col-g);
+}
+
+.chat-popup {
+	padding: 5px;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 10px;
+	right: 15px;
+	width: 350px;
+	height: 500px;
+	display: none;
+}
+
+.one {
+	height: 60px;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 15px;
+	background: var(--col-g);
+}
+
+.two {
+	height: 365px;
+}
+
+.three {
+	height: 60px;
+	border-radius: 0 0 10px 10px;
+	padding: 5px;
+	background: var(--col-g);
+}
+
+.input {
+	height: 100%;
+	width: 83.5%;
+	border-radius: 5px;
+	padding: 2px 12px;
+	border: 1px solid grey;
+}
+
+.btn {
+	height: 100%;
+	width: 15%;
+	border-radius: 5px;
+	border: 1px solid var(--col-b);
+	padding: 10px;
+	background: var(--col-b);
+}
+
+.icon {
+	font-size: 18px;
+	color: white;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.chat-title {
+	display: flex;
+	align-items: center;
+}
+
+.chat-title i {
+	margin-right: 15px;
+	color: var(--col-b);
+	font-size: 22px;
+}
+
+.chat-title span {
+	font-size: 18px;
+	color: var(--col-b);
+}
+
+.close-icon {
+	color: var(--col-b);
+	font-size: 24px;
+}
+
+.close {
+	border-radius: 5px;
+	border: 1px solid var(--col-b);
+}
+/*******************************/
+.open-btn {
+	background: var(--col-b);
+	color: var(--col-g);
+	padding: 10px 20px;
+	border-radius: 15px;
+	border: none;
+	cursor: pointer;
+	position: fixed;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s;
+	bottom: 20px;
+	right: 20px;
+	width: 180px;
+}
+
+.open-btn i {
+	font-size: 22px;
+	margin-left: 9px;
+}
+/**************************/ 
+#scroll-to-bottom {
+    height: 365px;
+    overflow-y: scroll;
+}
+
+.msg-container {
+    padding: 12px 10px;
+    min-height: 365px;
+    margin: 5px 0;
+}
+
+.msg {
+    background: var(--col-gl);
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid var(--col-g);
+}
+
+.current-user-msg {
+    background: var(--col-w);
+    margin-left: 50px;
+}
+
+.msg p {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.msg span {
+    font-size: 10px;
+    color: grey;
+    text-align: right;
+}
