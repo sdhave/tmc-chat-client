@@ -164,3 +164,34 @@
     color: grey;
     text-align: right;
 }
+
+.info-input {
+	height: 45px;
+	width: 95%;
+	margin-top: 10px;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 12px 2px;
+}
+
+.textarea {
+	height: 140px;
+	font-size: 14px;
+	resize: none;
+}
+
+.send-button {
+	background: var(--col-b);
+	color: var(--col-w);
+	height: 100%;
+	border-radius: 5px;
+	border: 2px solid var(--col-b);
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+	font-size: 18px;
+}

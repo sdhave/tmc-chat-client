@@ -39,6 +39,30 @@
         </form>
     </div>
     <!-- END OF CHAT	 -->
+
+    <!-- DETAILS POP UP	 -->
+    <div class="chat-popup" id="details-form-container">
+        <form action="https://chat-server.simbarashemapip.repl.co" class="form-container" id="detailsForm" method="POST">
+            <!-- 		CHAT HEAD	 -->
+            <div class="one b">
+                <h4 class="chat-title"><i class='bx bx-message-rounded-dots'></i><span>Chat Window</span></h4>
+                <span class="b center close" onclick="closeChatWindow()"><i class='bx bx-x close-icon'></i></span>
+            </div>
+            <!-- 		DETAILS	 -->
+            <div class="two b details">
+                <h5>Please fill in your information</h5>
+				<input type="text" name="names" placeholder="Full Names" class="input info-input" />
+				<input type="text" name="email" placeholder="Email" class="input info-input" />
+				<input type="text" name="phone" placeholder="Phone Number" class="input info-input" />
+				<textarea class="input info-input textarea" name="question" placeholder="Type in your question here ..."></textarea>
+            </div>
+            <!-- 		SEND CONTAINER	 -->
+            <div class="three b">
+                <button class="send-button">Send</button>
+            </div>
+        </form>
+    </div>
+    <!-- END OF DETAILS	 -->
 </body>
 
 </html>
